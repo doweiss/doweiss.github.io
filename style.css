@@ -1,0 +1,13 @@
+background: #1A6597;
+background: -moz-linear-gradient(left, #1A6597 0%, #175985 50%, #114161 100%);
+background: -webkit-linear-gradient(left, #1A6597 0%, #175985 50%, #114161 100%);
+background: linear-gradient(to right, #1A6597 0%, #175985 50%, #114161 100%);
+p {
+
+  font-family: Arial;
+
+  font-size: 30px;
+
+  color: black;
+
+}
