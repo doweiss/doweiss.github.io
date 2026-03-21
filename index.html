@@ -1,50 +1,46 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
-<title>Dominik Weiss - Dynamics</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="stylesheet_home.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" charset="utf-8">
-function get_user_name() {
-    // This script finds the user name from the url and then replaces "IhrBenutzername" with the user name.
-    if (document.getElementsByTagName("pre")[0] && (document.getElementsByTagName("pre")[0]["className"].indexOf("username") == 0) )  {
-        path = window.location.pathname;
-        if (path.indexOf("/student/") == 0) {
-            user_name = path.substring(9);
-        } else {
-            user_name = path.substring(2);
-        }
-        user_name = user_name.substring(0,user_name.indexOf("/"));
-        user_name = user_name + "/";
-        
-        pre_user = document.getElementsByTagName("pre")[0].firstChild.nodeValue;
-        pre_user = pre_user.replace(/IhrBenutzername\//g, user_name);
-        document.getElementsByTagName("pre")[0].firstChild.nodeValue = pre_user;
-    }
-}
-</script>
+    <meta charset="utf-8">
+    <title>Dominik Weiss</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body onload="get_user_name()">
+
+<body>
 
 <nav>
-	<p><a href= "mailto:doweiss@student.ethz.ch">doweiss</a></p>
-	<ul>
-		<li><center><a href="index.html">Home</a></center></li>
-		<li><center><a href="Dynamics2021.html">Dynamics 2021</a></center></li>
-		<li><center><a href="Dynamics2022.html">Dynamics 2022</a></center></li>
-		<li><center><a href="Dynamics2023.html">Dynamics 2023</a></center></li>
-		<li><center><a href="https://polybox.ethz.ch/index.php/s/mAAddieMOa35LCJ">Polybox</a></center></li>
-		<li><center><a href="https://github.com/doweiss/Bachelor-Thesis" target="_blank">Thesis</a></center></li>
-
-
-	</ul>
+    <a class="logo" href="index.html">doweiss</a>
+    <ul>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
 </nav>
+
+<div class="container">
+    <h1>Dominik Weiss</h1>
+    <p>
+        MSc Mechanical Engineering @ ETH Zürich  
+        Focus: Robotics, Systems & Control
+    </p>
+
+    <p>
+        I am interested in control theory, machine learning, and nonlinear dynamics,
+        with applications in autonomous systems and physics-inspired modeling.
+    </p>
+
+    <h2>Sections</h2>
+    <p>
+        → <a href="teaching.html">Teaching</a><br>
+        → <a href="research.html">Research</a> (coming soon)<br>
+        → <a href="blog.html">Blog</a> (coming soon)
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+        <a href="mailto:doweiss@student.ethz.ch">doweiss@student.ethz.ch</a>
+    </p>
+</div>
 
 </body>
 </html>
