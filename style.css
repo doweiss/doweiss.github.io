@@ -21,14 +21,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 60px;
 }
 
 nav .logo {
     font-size: 18px;
     color: #2f2f2f;
     text-decoration: none;
-    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 nav ul {
@@ -38,11 +38,11 @@ nav ul {
 
 nav ul li a {
     display: block;
-    padding: 18px;
+    padding: 22px;
     color: #6b6b6b;
     text-decoration: none;
     font-size: 13px;
-    font-weight: 300;
+    letter-spacing: 0.5px;
 }
 
 nav ul li a:hover {
@@ -51,54 +51,59 @@ nav ul li a:hover {
 
 /* MAIN LAYOUT */
 .container {
-    max-width: 720px;
-    margin: 100px auto;
-    padding: 50px;
-    background-color: #ffffff;
-    border-radius: 2px;
-    border: 1px solid #eae8e2;
-    box-shadow: none;
+    max-width: 780px;
+    margin: 120px auto;
+    padding: 60px 20px;
+
+    /* remove box look */
+    background-color: transparent;
+    border: none;
+}
+
+/* subtle section divider */
+.container > * + * {
+    border-top: 1px solid #eceae4;
+    padding-top: 25px;
+    margin-top: 25px;
 }
 
 /* HEADINGS */
 h1, h2 {
-    font-family: "Scope One", serif;
+    font-family: "Libre Caslon Text", serif;
     letter-spacing: 0.4px;
 }
 
 h1 {
-    font-size: 1.8rem;
-    margin-bottom: 8px;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.2rem;
-    margin-top: 25px;
-    margin-bottom: 8px;
+    font-size: 1.15rem;
 }
 
 /* TEXT */
 p {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.8;
     color: #5a5a5a;
 }
 
 /* LINKS */
 a {
-    color: #5E6C7A; /* faded navy */
+    color: #5E6C7A; /* navy */
     text-decoration: none;
+    border-bottom: 1px solid transparent;
 }
 
 a:hover {
-    color: #C37A74; /* terracotta */
-    text-decoration: underline;
+    color: #C37A74;
+    border-bottom: 1px solid #C37A74;
 }
 
 /* TABLE */
 .table-wrapper {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 table {
@@ -106,37 +111,57 @@ table {
     border-collapse: collapse;
 }
 
+/* header = subtle */
 table th {
     text-align: left;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 12px 10px;
+    font-size: 0.95rem;
     font-weight: 400;
-    letter-spacing: 0.4px;
-    border-bottom: 1px solid #ddd;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #dcdad4;
+    color: #6b6b6b;
 }
 
+/* rows = airy */
 table td {
-    padding: 9px;
-    font-size: 0.9rem;
+    padding: 14px 10px;
+    font-size: 0.95rem;
     border-bottom: 1px solid #eee;
 }
 
+/* remove striping, use hover instead */
 table tr:nth-child(even) {
-    background-color: #f7f5f2;
+    background-color: transparent;
 }
 
-/* YEAR BUTTONS */
+table tr:hover {
+    background-color: #f3f1ec;
+}
+
+/* YEAR BUTTONS → more like list items */
 .year-list a {
     display: block;
-    padding: 12px;
-    margin-bottom: 10px;
-    background-color: #f1efe9;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+
+    background-color: transparent;
     border: 1px solid #e2dfd7;
     border-radius: 2px;
-    font-size: 0.95rem;
+
+    font-size: 1rem;
+    color: #2f2f2f;
+
+    transition: all 0.2s ease;
 }
 
 .year-list a:hover {
-    background-color: #e8e4da;
+    border-color: #C37A74;
     color: #C37A74;
+    background-color: #f8f5f3;
+}
+
+/* SMALL DETAIL: subtle emphasis */
+strong {
+    color: #C37A74;
+    font-weight: 400;
 }
