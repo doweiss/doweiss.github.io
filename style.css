@@ -73,17 +73,20 @@ nav ul li a:hover {
 
 /* HEADINGS */
 h1, h2 {
+    font-family: "Poiret One", sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 h1 {
+    font-family: "Poiret One", sans-serif;
     font-size: 1.6rem;
     color: #C37A74; /* terracotta */
     margin-bottom: 10px;
 }
 
 h2 {
+    font-family: "Poiret One", sans-serif;
     font-size: 1.1rem;
     color: #5E6C7A; /* navy */
     margin-bottom: 10px;
