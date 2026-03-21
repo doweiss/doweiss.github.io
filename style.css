@@ -10,7 +10,7 @@ body {
     font-family: "Poiret One", sans-serif;
     font-size: 1.05rem;
     letter-spacing: 0.5px;
-    background-color: #f6f5f2;
+    background-color: #ffffff; /* pure white now */
     color: #2f2f2f;
 }
 
@@ -35,6 +35,146 @@ nav .logo {
 nav ul {
     list-style: none;
     display: flex;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #5E6C7A;
+    text-decoration: none;
+    font-size: 14px;
+    border-left: 1px solid #e0ddd6;
+}
+
+nav ul li a:hover {
+    color: #C37A74;
+    background-color: transparent;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 780px;
+    margin: 100px auto;
+    padding: 0;
+
+    border: 2px solid #5E6C7A;
+    background-color: #ffffff;
+}
+
+/* SECTION BLOCKS */
+.container > * {
+    padding: 30px;
+    border-bottom: 1px solid #e0ddd6;
+}
+
+.container > *:last-child {
+    border-bottom: none;
+}
+
+/* HEADINGS */
+h1, h2 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: #C37A74;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: #5E6C7A;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+}
+
+/* LINKS */
+a {
+    color: #5E6C7A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C37A74;
+    text-decoration: underline;
+}
+
+/* TABLE WRAPPER */
+.table-wrapper {
+    border: 1px solid #5E6C7A;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* HEADER */
+table th {
+    text-align: left;
+    padding: 12px;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    color: #5E6C7A; /* replaced green */
+    border-bottom: 2px solid #5E6C7A;
+}
+
+/* CELLS */
+table td {
+    padding: 14px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #e0ddd6;
+}
+
+/* GRID LINES */
+table td:not(:last-child),
+table th:not(:last-child) {
+    border-right: 1px solid #e0ddd6;
+}
+
+/* ROW HOVER */
+table tr:hover {
+    background-color: transparent;
+}
+
+/* YEAR BUTTONS */
+.year-list a {
+    display: block;
+    padding: 16px;
+    margin-bottom: 12px;
+
+    border: 2px solid #5E6C7A;
+    background-color: #ffffff;
+
+    font-size: 1rem;
+    color: #2f2f2f;
+}
+
+.year-list a:hover {
+    border-color: #C37A74;
+    color: #C37A74;
+}
+
+/* ACCENTS */
+strong {
+    color: #C37A74;
+}
+
+/* SHARP LOOK */
+.container,
+.year-list a,
+.table-wrapper {
+    border-radius: 0;
+}    display: flex;
 }
 
 nav ul li a {
